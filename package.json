@@ -18,6 +18,9 @@
     "search",
     "file"
   ],
+  "bin": {
+    "btsearch": "index.js"
+  },
   "author": {
     "name": "Bogdan Tokarskyi",
     "email": "tokarskyi.work@gmail.com",
