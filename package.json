@@ -1,0 +1,31 @@
+{
+  "name": "bt-file-search",
+  "version": "1.0.0",
+  "description": "CLI async file search",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tokarskyibogdan/bt-file-search.git"
+  },
+  "keywords": [
+    "fs",
+    "filesearch",
+    "nodejs",
+    "js",
+    "search",
+    "file"
+  ],
+  "author": {
+    "name": "Bogdan Tokarskyi",
+    "email": "tokarskyi.work@gmail.com",
+    "link": "https://github.com/tokarskyibogdan"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tokarskyibogdan/bt-file-search/issues"
+  },
+  "homepage": "https://github.com/tokarskyibogdan/bt-file-search#readme"
+}
