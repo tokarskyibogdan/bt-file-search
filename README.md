@@ -1,16 +1,16 @@
-# bt-file-search
+# btsearch
 Node JS async file search.
 
 ## Installation
 
-``$ [sudo] npm install -g bt-file-search``
+``$ [sudo] npm install -g btsearch``
 
 ## Usage:
     
 ##### CLI   
 
     Usage:
-        bt-file-search [OPTION]=[ARG]
+        btsearch [OPTION]=[ARG]
     
     Options: 
         --DIR (required) base lookup directory
@@ -25,7 +25,7 @@ Node JS async file search.
 
 > The order of the parameters is NOT strict. 
 
-``bt-file-search --DIR=./ --TYPE=F --MIN-SIZE=100M --MAX-SIZE=1G --PATTERN=\.js`` 
+``btsearch --DIR=./ --TYPE=F --MIN-SIZE=100M --MAX-SIZE=1G --PATTERN=\.js`` 
 
 ### License and Copyright
-This software is released under the terms of the [ISC license](https://github.com/tokarskyibogdan/bt-file-search/blob/master/LICENSE.md).
+This software is released under the terms of the [ISC license](https://github.com/tokarskyibogdan/btsearch/blob/master/LICENSE.md).
