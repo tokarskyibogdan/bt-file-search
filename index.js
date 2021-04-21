@@ -10,7 +10,6 @@ const args = process.argv.slice(2).reduce((acc, arg) => {
 }, {});
 
 console.log('test');
-console.log('test 2');
 
 let directory = args.dir,
     type = args.type,
