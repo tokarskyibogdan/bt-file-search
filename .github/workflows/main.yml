@@ -32,7 +32,7 @@ jobs:
           registry-url: https://registry.npmjs.org
 
       - name: Set version
-        uses: ./.github/actions/tag-version-action@main
+        uses: actions/tag-version@v1.5
         id: package-version
         with:
           npm-publish: true
