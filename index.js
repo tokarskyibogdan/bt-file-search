@@ -9,6 +9,8 @@ const args = process.argv.slice(2).reduce((acc, arg) => {
     return acc
 }, {});
 
+console.log('test');
+
 let directory = args.dir,
     type = args.type,
     pattern = args.pattern,
