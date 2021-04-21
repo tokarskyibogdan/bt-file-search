@@ -1,6 +1,8 @@
 # btsearch
 Node JS async file search.
 
+hello
+
 ## Installation
 
 ``$ [sudo] npm install -g btsearch``
