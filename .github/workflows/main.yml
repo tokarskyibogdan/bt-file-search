@@ -1,0 +1,46 @@
+name: Test, Build and Release
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '**.ts'
+      - '**.js'
+      - '**.json'
+      - 'package.json'
+  pull_request:
+    paths:
+      - '.github/workflows/main.yml'
+      - '**.ts'
+      - '**.js'
+      - '**.json'
+      - 'package.json'
+jobs:
+  publish-npm-github-package:
+    name: Publish Github Package to the NPM registry
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/master' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+
+      - name: Set up Node.js
+        uses: actions/setup-node@main
+        with:
+          node-version: 10.19.0
+          always-auth: true
+          registry-url: https://registry.npmjs.org
+
+      - name: Set version
+        uses: ./.github/actions/tag-version-action
+        id: package-version
+        with:
+          npm-publish: true
+          npm-auth-token: ${{secrets.TOKEN}}
+          github-token: ${{secrets.TOKEN}}
+
+      - name: Get version
+        run: |
+          echo Git tag: ${{ steps.package-version.outputs.git-tag }}
+          echo Build version: ${{ steps.package-version.outputs.version }}
+        shell: bash
